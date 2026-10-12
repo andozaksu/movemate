@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "624887117354",
+    "project_id": "movemate-394df",
+    "storage_bucket": "movemate-394df.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:624887117354:android:2ac4ffc9a32256e247f553",
+        "android_client_info": {
+          "package_name": "com.example.movemate"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDISjjzs5lYA-WiSRVMtCL2Cn9m0Sw1QL4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

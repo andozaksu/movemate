@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="20dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="28dp">
+
+        <!-- ── GREETING HEADER ── -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="28dp">
+
+            <TextView
+                android:id="@+id/tvGreeting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Good morning"
+                android:textSize="14sp"
+                android:textColor="@color/text_secondary"
+                android:letterSpacing="0.02" />
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginTop="2dp" />
+
+        </LinearLayout>
+
+        <!-- ── SECTION LABEL ── -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Performance"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginBottom="14dp" />
+
+        <!-- ── 3 PERFORMANCE TILES ── -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+
+            <!-- Steps tile -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="7dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="0dp"
+                app:cardBackgroundColor="@color/surface_card"
+                app:contentPadding="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="14dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="STEPS"
+                        android:textSize="10sp"
+                        android:textColor="@color/text_secondary"
+                        android:letterSpacing="0.1"
+                        android:textAllCaps="true" />
+
+                    <TextView
+                        android:id="@+id/tvStepsCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textSize="26sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="6dp"
+                        android:maxLines="1" />
+
+                    <com.google.android.material.progressindicator.LinearProgressIndicator
+                        android:id="@+id/progressSteps"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        app:indicatorColor="@color/accent_yellow"
+                        app:trackColor="@color/ring_background"
+                        app:trackThickness="3dp"
+                        app:indicatorSize="3dp"
+                        android:progress="0"
+                        android:max="100" />
+
+                    <TextView
+                        android:id="@+id/tvStepsGoal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="of 10,000 goal"
+                        android:textSize="9sp"
+                        android:textColor="@color/text_secondary"
+                        android:layout_marginTop="5dp"
+                        android:maxLines="1"
+                        android:ellipsize="end" />
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Calories tile — YELLOW ACCENT (featured, like screenshot center tile) -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="7dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="0dp"
+                app:cardBackgroundColor="@color/accent_yellow"
+                app:contentPadding="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="14dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="KCAL"
+                        android:textSize="10sp"
+                        android:textColor="@color/on_accent"
+                        android:letterSpacing="0.1"
+                        android:textAllCaps="true" />
+
+                    <TextView
+                        android:id="@+id/tvCaloriesCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0 kcal"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/on_accent"
+                        android:layout_marginTop="6dp"
+                        android:maxLines="1" />
+
+                    <com.google.android.material.progressindicator.LinearProgressIndicator
+                        android:id="@+id/progressCalories"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        app:indicatorColor="@color/on_accent"
+                        app:trackColor="@color/accent_yellow_dark"
+                        app:trackThickness="3dp"
+                        android:progress="0"
+                        android:max="100" />
+
+                    <TextView
+                        android:id="@+id/tvCaloriesGoal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="of 2,000 kcal goal"
+                        android:textSize="9sp"
+                        android:textColor="@color/on_accent"
+                        android:alpha="0.7"
+                        android:layout_marginTop="5dp"
+                        android:maxLines="1"
+                        android:ellipsize="end" />
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Sleep tile -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="0dp"
+                app:cardBackgroundColor="@color/surface_card"
+                app:contentPadding="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="14dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SLEEP"
+                        android:textSize="10sp"
+                        android:textColor="@color/text_secondary"
+                        android:letterSpacing="0.1"
+                        android:textAllCaps="true" />
+
+                    <TextView
+                        android:id="@+id/tvSleepDuration"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No data"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="6dp"
+                        android:maxLines="1" />
+
+                    <com.google.android.material.progressindicator.LinearProgressIndicator
+                        android:id="@+id/progressSleep"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        app:indicatorColor="@color/accent_yellow"
+                        app:trackColor="@color/ring_background"
+                        app:trackThickness="3dp"
+                        android:progress="0"
+                        android:max="100" />
+
+                    <TextView
+                        android:id="@+id/tvSleepGoal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Goal: 8h 0m"
+                        android:textSize="9sp"
+                        android:textColor="@color/text_secondary"
+                        android:layout_marginTop="5dp"
+                        android:maxLines="1"
+                        android:ellipsize="end" />
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+        <!-- ── WEIGHT / BMI CARD ── -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="0dp"
+            app:cardBackgroundColor="@color/surface_card"
+            app:contentPadding="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="20dp"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="WEIGHT / BMI"
+                        android:textSize="11sp"
+                        android:textColor="@color/text_secondary"
+                        android:textAllCaps="true"
+                        android:letterSpacing="0.08" />
+
+                    <TextView
+                        android:id="@+id/tvWeightBmi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No weight logged yet"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="4dp" />
+
+                </LinearLayout>
+
+                <!-- Yellow accent dot -->
+                <View
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:background="@color/accent_yellow"
+                    android:layout_gravity="center_vertical" />
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- ── VIEW CHARTS BUTTON ── -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnViewCharts"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="View Progress Charts"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:backgroundTint="@color/surface_card"
+            app:strokeColor="@color/accent_yellow"
+            app:strokeWidth="1dp"
+            app:cornerRadius="14dp"
+            app:rippleColor="#33D4F53C" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,75 @@
+<resources>
+    <string name="app_name">MoveMate</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_steps">Steps</string>
+    <string name="nav_sleep">Sleep</string>
+    <string name="nav_food">Food</string>
+    <string name="nav_profile">Profile</string>
+
+    <!-- Home -->
+    <string name="today_overview">Today\'s Overview</string>
+    <string name="steps_label">Steps</string>
+    <string name="calories_label">Calories</string>
+    <string name="sleep_label">Sleep</string>
+    <string name="goal_label">Goal</string>
+    <string name="of_goal">of %1$d goal</string>
+
+    <!-- Steps -->
+    <string name="steps_today">Steps Today</string>
+    <string name="distance_km">Distance: %.2f km</string>
+    <string name="calories_burned">Calories Burned: %d kcal</string>
+    <string name="step_goal_progress">%1$d / %2$d steps</string>
+    <string name="permission_required">Activity recognition permission is required for step tracking.</string>
+
+    <!-- Sleep -->
+    <string name="sleep_status">Sleep Status</string>
+    <string name="sleep_tracking_active">Tracking sleep…</string>
+    <string name="sleep_tracking_idle">Not sleeping</string>
+
+    <!-- Food -->
+    <string name="food_log">Food Log</string>
+    <string name="add_food">Add Food</string>
+    <string name="scan_barcode">Scan Barcode</string>
+    <string name="total_calories_today">Total today: %d kcal</string>
+    <string name="food_name_hint">Food name</string>
+    <string name="calories_hint">Calories (kcal)</string>
+    <string name="protein_hint">Protein (g)</string>
+    <string name="carbs_hint">Carbs (g)</string>
+    <string name="fat_hint">Fat (g)</string>
+
+    <!-- Weight / BMI -->
+    <string name="weight_tracker">Weight Tracker</string>
+    <string name="log_weight">Log Weight</string>
+    <string name="weight_hint">Weight (kg)</string>
+    <string name="bmi_result">BMI: %.1f (%s)</string>
+    <string name="bmi_underweight">Underweight</string>
+    <string name="bmi_normal">Normal</string>
+    <string name="bmi_overweight">Overweight</string>
+    <string name="bmi_obese">Obese</string>
+
+    <!-- Profile -->
+    <string name="profile_settings">Profile &amp; Goals</string>
+    <string name="name_hint">Full name</string>
+    <string name="age_hint">Age</string>
+    <string name="height_hint">Height (cm)</string>
+    <string name="step_goal_hint">Daily step goal</string>
+    <string name="calorie_goal_hint">Daily calorie goal (kcal)</string>
+    <string name="sleep_goal_hint">Sleep goal (minutes)</string>
+    <string name="save_profile">Save Profile</string>
+    <string name="firebase_section">Cloud Backup (Firebase)</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="backup_now">Backup Now</string>
+    <string name="restore_data">Restore Data</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+
+    <!-- Charts -->
+    <string name="progress_charts">Progress Charts</string>
+    <string name="steps_chart_title">Steps (Last 7 Days)</string>
+    <string name="weight_chart_title">Weight Trend</string>
+    <string name="calories_chart_title">Calories (Last 7 Days)</string>
+</resources>

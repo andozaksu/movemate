@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand: charcoal dark + chartreuse accent -->
+    <color name="primary">#FFFFFFFF</color>
+    <color name="primary_dark">#FF1A1A1A</color>
+    <color name="primary_light">#FF333333</color>
+    <color name="accent">#FFD4F53C</color>
+
+    <!-- Signature yellow accent -->
+    <color name="accent_yellow">#FFD4F53C</color>
+    <color name="accent_yellow_dark">#FFB8D832</color>
+    <color name="on_accent">#FF1A1A1A</color>
+
+    <!-- Feature colors — all white in monochrome, overridden per-view via accent -->
+    <color name="steps_color">#FFFFFFFF</color>
+    <color name="sleep_color">#FFFFFFFF</color>
+    <color name="food_color">#FFD4F53C</color>
+    <color name="weight_color">#FFFFFFFF</color>
+
+    <!-- Progress tracks -->
+    <color name="ring_background">#FF333333</color>
+
+    <!-- Chart colors -->
+    <color name="chart_steps">#FFFFFFFF</color>
+    <color name="chart_sleep">#FF888888</color>
+    <color name="chart_food">#FFD4F53C</color>
+
+    <!-- Surfaces -->
+    <color name="background">#FF1A1A1A</color>
+    <color name="surface">#FF1A1A1A</color>
+    <color name="surface_card">#FF252525</color>
+    <color name="divider">#FF333333</color>
+
+    <!-- Text -->
+    <color name="text_primary">#FFFFFFFF</color>
+    <color name="text_secondary">#FF888888</color>
+    <color name="text_on_yellow">#FF1A1A1A</color>
+
+    <!-- Navigation bar -->
+    <color name="nav_bar_bg">#FFF2F2F2</color>
+    <color name="nav_selected">#FF9B8FFA</color>
+    <color name="nav_icon_selected">#FFFFFFFF</color>
+    <color name="nav_icon_default">#FF555555</color>
+    <color name="nav_circle_bg">#FFFFFFFF</color>
+
+    <!-- Standard -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Legacy aliases (kept for any remaining references) -->
+    <color name="purple_200">#FFBBBBBB</color>
+    <color name="purple_500">#FFFFFFFF</color>
+    <color name="purple_700">#FFDDDDDD</color>
+    <color name="teal_200">#FFBBBBBB</color>
+    <color name="teal_700">#FF888888</color>
+</resources>

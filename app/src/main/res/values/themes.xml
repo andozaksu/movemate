@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.MoveMate" parent="Theme.MaterialComponents.NoActionBar">
+        <!-- Charcoal brand palette -->
+        <item name="colorPrimary">@color/accent_yellow</item>
+        <item name="colorPrimaryDark">@color/background</item>
+        <item name="colorAccent">@color/accent_yellow</item>
+
+        <!-- Window -->
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:statusBarColor">@color/background</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:colorBackground">@color/background</item>
+
+        <!-- Surface -->
+        <item name="colorSurface">@color/surface_card</item>
+        <item name="colorOnSurface">@color/white</item>
+        <item name="colorOnPrimary">@color/on_accent</item>
+        <item name="colorOnBackground">@color/white</item>
+
+        <!-- Text -->
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+        <item name="android:textColorHint">@color/text_secondary</item>
+
+        <!-- Input controls -->
+        <item name="colorControlNormal">@color/text_secondary</item>
+        <item name="colorControlActivated">@color/accent_yellow</item>
+        <item name="colorControlHighlight">#33D4F53C</item>
+
+        <!-- Component styles -->
+        <item name="materialCardViewStyle">@style/CardStyle</item>
+        <item name="materialButtonStyle">@style/ButtonStyle</item>
+    </style>
+
+    <style name="CardStyle" parent="Widget.MaterialComponents.CardView">
+        <item name="cardElevation">0dp</item>
+        <item name="cardCornerRadius">16dp</item>
+        <item name="cardBackgroundColor">@color/surface_card</item>
+        <item name="strokeColor">@color/divider</item>
+        <item name="strokeWidth">0dp</item>
+    </style>
+
+    <style name="ButtonStyle" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/accent_yellow</item>
+        <item name="android:textColor">@color/on_accent</item>
+        <item name="cornerRadius">12dp</item>
+        <item name="elevation">0dp</item>
+    </style>
+
+    <style name="OutlinedButtonStyle" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="strokeColor">@color/divider</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="cornerRadius">12dp</item>
+        <item name="rippleColor">#33FFFFFF</item>
+    </style>
+
+</resources>

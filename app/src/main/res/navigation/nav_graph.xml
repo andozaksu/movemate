@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.movemate.ui.home.HomeFragment"
+        android:label="Home">
+        <action
+            android:id="@+id/action_home_to_charts"
+            app:destination="@id/chartsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/stepsFragment"
+        android:name="com.example.movemate.ui.steps.StepsFragment"
+        android:label="Steps" />
+
+    <fragment
+        android:id="@+id/sleepFragment"
+        android:name="com.example.movemate.ui.sleep.SleepFragment"
+        android:label="Sleep" />
+
+    <fragment
+        android:id="@+id/foodFragment"
+        android:name="com.example.movemate.ui.food.FoodFragment"
+        android:label="Food" />
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.movemate.ui.profile.ProfileFragment"
+        android:label="Profile">
+        <action
+            android:id="@+id/action_profile_to_weight"
+            app:destination="@id/weightFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/chartsFragment"
+        android:name="com.example.movemate.ui.charts.ChartsFragment"
+        android:label="Charts" />
+
+    <fragment
+        android:id="@+id/weightFragment"
+        android:name="com.example.movemate.ui.weight.WeightFragment"
+        android:label="Weight Tracker" />
+
+</navigation>

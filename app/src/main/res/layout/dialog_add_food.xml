@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:background="@color/surface_card">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="QUICK ADD"
+        android:textSize="11sp"
+        android:textAllCaps="true"
+        android:textColor="@color/text_secondary"
+        android:letterSpacing="0.08"
+        android:layout_marginBottom="8dp" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chipGroupCommonFoods"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipApple"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Apple (95 kcal)"
+            app:chipBackgroundColor="@color/background"
+            app:chipStrokeColor="@color/divider"
+            app:chipStrokeWidth="1dp"
+            android:textColor="@color/white" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipBanana"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Banana (105 kcal)"
+            app:chipBackgroundColor="@color/background"
+            app:chipStrokeColor="@color/divider"
+            app:chipStrokeWidth="1dp"
+            android:textColor="@color/white" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipChicken"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chicken breast (165 kcal)"
+            app:chipBackgroundColor="@color/background"
+            app:chipStrokeColor="@color/divider"
+            app:chipStrokeWidth="1dp"
+            android:textColor="@color/white" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipRice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rice 100g (130 kcal)"
+            app:chipBackgroundColor="@color/background"
+            app:chipStrokeColor="@color/divider"
+            app:chipStrokeWidth="1dp"
+            android:textColor="@color/white" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipEgg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Egg (78 kcal)"
+            app:chipBackgroundColor="@color/background"
+            app:chipStrokeColor="@color/divider"
+            app:chipStrokeWidth="1dp"
+            android:textColor="@color/white" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipOats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Oats 100g (389 kcal)"
+            app:chipBackgroundColor="@color/background"
+            app:chipStrokeColor="@color/divider"
+            app:chipStrokeWidth="1dp"
+            android:textColor="@color/white" />
+
+    </com.google.android.material.chip.ChipGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider"
+        android:layout_marginBottom="14dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CUSTOM ENTRY"
+        android:textSize="11sp"
+        android:textAllCaps="true"
+        android:textColor="@color/text_secondary"
+        android:letterSpacing="0.08"
+        android:layout_marginBottom="10dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Food name"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginBottom="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etFoodName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapSentences"
+            android:textColor="@color/white" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Calories (kcal)"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginBottom="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etCalories"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textColor="@color/white" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Protein (g)"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginEnd="4dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etProtein"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:textColor="@color/white" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Carbs (g)"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etCarbs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:textColor="@color/white" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Fat (g)"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginStart="4dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etFat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:textColor="@color/white" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+
+    <!-- Minimal dark toolbar — used by Navigation Component for back arrows/titles -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        app:elevation="0dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/background"
+            android:titleTextColor="@color/white"
+            app:popupTheme="@style/ThemeOverlay.MaterialComponents.Dark" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/nav_host_fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="96dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:navGraph="@navigation/nav_graph"
+        app:defaultNavHost="true" />
+
+    <!-- Custom floating bottom navigation bar -->
+    <LinearLayout
+        android:id="@+id/customNavBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@drawable/nav_bar_background"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:elevation="12dp"
+        android:clipChildren="false"
+        android:clipToPadding="false">
+
+        <FrameLayout
+            android:id="@+id/navHome"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/nav_selected_circle"
+            android:clickable="true"
+            android:focusable="true">
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_nav_home"
+                android:contentDescription="@string/nav_home"
+                app:tint="@color/nav_icon_selected" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/navSteps"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/nav_unselected_circle"
+            android:clickable="true"
+            android:focusable="true">
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_nav_steps"
+                android:contentDescription="@string/nav_steps"
+                app:tint="@color/nav_icon_default" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/navSleep"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/nav_unselected_circle"
+            android:clickable="true"
+            android:focusable="true">
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_nav_sleep"
+                android:contentDescription="@string/nav_sleep"
+                app:tint="@color/nav_icon_default" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/navFood"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/nav_unselected_circle"
+            android:clickable="true"
+            android:focusable="true">
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_nav_food"
+                android:contentDescription="@string/nav_food"
+                app:tint="@color/nav_icon_default" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/navProfile"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/nav_unselected_circle"
+            android:clickable="true"
+            android:focusable="true">
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_nav_profile"
+                android:contentDescription="@string/nav_profile"
+                app:tint="@color/nav_icon_default" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
